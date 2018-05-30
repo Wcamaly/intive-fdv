@@ -16,7 +16,9 @@ class HeaderComponent extends Component {
     return {
       [SHOW_FILTER]: {
         className: "btn-primary ",
-        label:'Filter'},
+        label:'Filter',
+        icon:"glyphicon glyphicon-search",
+      },
         [SHOW_ALL]: {
         className: "btn-danger ",
         label:'X',
@@ -61,8 +63,14 @@ class HeaderComponent extends Component {
               <label className="col-xs-12"> &nbsp;</label>
               <div className="btn-group">
               {Object.keys(this.getListFilters()).map(filter =>
-                <FilterContainer filter={filter} key={filter} className={` btn ${this.getListFilters()[filter].className}`} onClick={this.getListFilters()[filter].callback}>
-                  {this.getListFilters()[filter].label}
+                <FilterContainer filter={filter} key={filter} className={` btn btn-responsive ${this.getListFilters()[filter].className}`} onClick={this.getListFilters()[filter].callback}>
+                  {this.getListFilters()[filter].icon !== undefined
+                    ? <span>
+                        <span className={this.getListFilters()[filter].icon}></span>
+                        <span className="hidden-xs" >&nbsp;{this.getListFilters()[filter].label}</span> 
+                      </span>
+                    : <span >{this.getListFilters()[filter].label}</span>
+                  }                 
                 </FilterContainer>
               )}
               </div>

@@ -29,3 +29,10 @@
 #root {
   margin: 25px;
 }
+
+  
+@media (max-width: 768px) {
+  .btn-responsive {
+    padding: 6px 5px
+  }
+}

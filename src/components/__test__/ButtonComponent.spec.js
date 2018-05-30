@@ -17,7 +17,6 @@ describe('<ButtonComponent />', () => {
 
   it('renders a ButtonComponent', () => {
     const wrapper = shallow(<ButtonComponent setFilter={setFilter} className="test"  onClick={onClick}>{"Test"}</ButtonComponent>)
-    expect(wrapper.find('button').prop('children')).toBe('Test')
     expect(wrapper.find('button').length).toBe(1)
     expect(wrapper.find('button').prop('className')).toBe('test') 
     wrapper.find('button').simulate('click')
