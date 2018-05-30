@@ -1,0 +1,36 @@
+{
+  "name": "intive-fdv",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "eject": "react-scripts eject"
+  },
+  "dependencies": {
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "react-redux": "^5.0.7",
+    "react-scripts": "1.1.4",
+    "redux": "^4.0.0",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.2.0",
+    "reselect": "^3.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0-beta.38",
+    "@babel/preset-env": "^7.0.0-beta.36",
+    "@babel/preset-react": "^7.0.0-beta.36",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^22.1.0",
+    "babel-loader": "^8.0.0-beta.0",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "jest": "^23.0.1",
+    "redux-test-utils": "^0.2.2",
+    "regenerator-runtime": "^0.11.1"
+  }
+}
